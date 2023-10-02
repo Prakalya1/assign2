@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>IETE</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(backgroundimage.jpg);
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        ul.sub-menu {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            top: 30px;
+            left: 0;
+        }
+
+        li:hover .sub-menu {
+            display: block;
+        }
+
+        .container {
+            margin-top: 100px;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Center vertically on the viewport */
+        }
+
+        .container h1 {
+            font-size: 36px; /* Adjust the font size as needed */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">About</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">History</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Membership</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">link1</a></li>
+                        <li><a href="#">link2</a></li>
+                        <li><a href="#">link3</a></li>
+                    </ul>
+                
+                </li>
+                <li><a href="#">Contacts</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">place  </a></li>
+                        <li><a href="#">contact number</a></li>
+                        <li><a href="#">map</a></li>
+                    </ul>
+                
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>IETE</h1>
+        <h2>BE A LIFELONG STUDENT</h2>
+            <p>THE MORE YOU LEARN, THE MORE YOU EARN AND THE MORE SELF CONFIDENCE YOU WILL HAVE.</p>
+    </div>
+</body>
+</html>
